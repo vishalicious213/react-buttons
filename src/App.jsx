@@ -5,7 +5,7 @@ export default function App() {
 
     return (
         <main>
-            <Button text="button" />
+            <Button text="Click here" />
         </main>
     )
 }
