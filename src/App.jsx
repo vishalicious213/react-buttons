@@ -1,12 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import Button from "../components/Button"
 
 function App() {
     console.log("React Buttons")
 
     return (
         <main>
-            MAIN
+            <Button text="button" />
         </main>
     )
 }
