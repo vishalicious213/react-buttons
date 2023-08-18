@@ -1,8 +1,6 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
 import Button from "../components/Button"
 
-function App() {
+export default function App() {
     console.log("React Buttons")
 
     return (
@@ -11,5 +9,3 @@ function App() {
         </main>
     )
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />)
