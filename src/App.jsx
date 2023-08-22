@@ -19,6 +19,14 @@ export default function App() {
             <ButtonChildren onClick={handleLogin}>
                 <FcGoogle /> Log in with Google
             </ButtonChildren>
+
+            <ButtonChildren onClick={handleLogin} size="sm">
+                <FcGoogle /> Log in with Google
+            </ButtonChildren>
+
+            <ButtonChildren onClick={handleLogin} size="lg">
+                <FcGoogle /> Log in with Google
+            </ButtonChildren>
         </main>
     )
 }
