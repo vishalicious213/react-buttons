@@ -10,7 +10,7 @@ export default function App() {
 
     return (
         <main>
-            <Button text="Click here" />
+            {/* <Button text="Click here" />
 
             <ButtonChildren>
                 <FaMoneyBill /> Buy Now!
@@ -29,6 +29,18 @@ export default function App() {
             </ButtonChildren>
             
             <ButtonChildren onClick={handleLogin} size="lg" green="true">
+                <FcGoogle /> Log in with Google
+            </ButtonChildren> */}
+
+            <ButtonChildren variant="success">
+                <FcGoogle /> Log in with Google
+            </ButtonChildren>
+
+            <ButtonChildren variant="warning">
+                <FcGoogle /> Log in with Google
+            </ButtonChildren>
+
+            <ButtonChildren variant="danger">
                 <FcGoogle /> Log in with Google
             </ButtonChildren>
         </main>
