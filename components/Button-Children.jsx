@@ -1,10 +1,10 @@
-export default function ButtonChildren(props) {
+export default function ButtonChildren({children, size, ...rest}) {
     return (
         <button 
-            className={props.size === "sm" ? "button-small" : props.size === "lg" ? "button-large" : ""}
-            onClick={props.onClick}
+            className={size === "sm" ? "button-small" : size === "lg" ? "button-large" : ""}
+            onClick={rest.onClick}
         >
-            {props.children}
+            {children}
         </button>
     )
 }
