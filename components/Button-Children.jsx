@@ -1,7 +1,13 @@
-export default function ButtonChildren({children, size, ...rest}) {
+export default function ButtonChildren({children, size, green, ...rest}) {
+    let buttonClass = ""
+
+    if (size === "sm") buttonClass += "button-small"
+    if (size === "lg") buttonClass += "button-large"
+    if (green) buttonClass += " green"
+
     return (
         <button 
-            className={size === "sm" ? "button-small" : size === "lg" ? "button-large" : ""}
+            className={buttonClass}
             onClick={rest.onClick}
         >
             {children}
