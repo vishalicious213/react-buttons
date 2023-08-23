@@ -1,5 +1,6 @@
 import Button from "../components/Button"
 import ButtonChildren from "../components/Button-Children"
+import Avatar from "../components/Avatar"
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 
@@ -43,6 +44,12 @@ export default function App() {
             <ButtonChildren variant="danger">
                 <FcGoogle /> Log in with Google
             </ButtonChildren>
+
+            {/* <Avatar src="./images/bob.jpg" alt="Bob Ziroll" /> */}
+            {/* <br /> */}
+            <Avatar>BZ</Avatar>
+            {/* <br /> */}
+            <Avatar />
         </main>
     )
 }

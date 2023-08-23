@@ -17,6 +17,8 @@ main {
     align-items: center;
 }
 
+/* BUTTONS */
+
 button {
     background-color: #E5E7EB;
     color: #4B5563;
@@ -69,4 +71,43 @@ button.button-large {
     color: #F87171;
     background-color: #FEF2F2;
     border-color: #F87171;
+}
+
+/* AVATAR */
+
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .3rem solid white;
+}
+
+.avatar > img {
+    width: 100%;
+}
+
+.avatar-letters {
+    background-color: var(--red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.avatar-icon {
+    background-color: var(--navy);
+}
+
+.avatar > svg {
+    height: 100%;
+    width: 100%;
+    transform: translateY(20px);
+    color: whitesmoke;
 }
