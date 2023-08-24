@@ -1,6 +1,7 @@
 import Button from "../components/Button"
 import ButtonChildren from "../components/Button-Children"
 import Avatar from "../components/Avatar"
+import Menu from "../components/Menu"
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 
@@ -33,7 +34,7 @@ export default function App() {
                 <FcGoogle /> Log in with Google
             </ButtonChildren> */}
 
-            <ButtonChildren variant="success">
+            {/* <ButtonChildren variant="success">
                 <FcGoogle /> Log in with Google
             </ButtonChildren>
 
@@ -43,13 +44,16 @@ export default function App() {
 
             <ButtonChildren variant="danger">
                 <FcGoogle /> Log in with Google
-            </ButtonChildren>
+            </ButtonChildren> */}
 
-            <Avatar src="./bob.jpg" alt="Bob Ziroll" />
-            {/* <br /> */}
+            {/* <Avatar src="./bob.jpg" alt="Bob Ziroll" />
             <Avatar>BZ</Avatar>
-            {/* <br /> */}
-            <Avatar />
+            <Avatar /> */}
+
+            <Menu
+                buttonText="Sports"
+                items={["Tennis", "Pickleball", "Racquetball", "Squash"]}
+            />
         </main>
     )
 }
