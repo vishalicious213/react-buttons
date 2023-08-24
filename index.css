@@ -1,3 +1,11 @@
+:root {
+    --navy: #1F2937;
+    --pink: #DA6AEC;
+    --red: #F43F5E;
+    --blue: #2F74DC;
+    --green: #22CD90;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -85,6 +93,7 @@ button.button-large {
     align-items: center;
     justify-content: center;
     border: .3rem solid white;
+    margin-bottom: .5rem;
 }
 
 .avatar > img {
