@@ -1,5 +1,20 @@
-export default function Button(props) {
+import classnames from "classnames"
+
+export default function Button({ children, className, size, variant, ...rest }) {
+    let sizeClass = size && `button-${size}`
+    let variantClass = variant && `button-${variant}`
+    const allClasses = classnames(sizeClass, variantClass, className)
+
     return (
-        <button>{props.text}</button>
+        <button className={allClasses} {...rest}>
+            {children}
+        </button>
     )
 }
+
+
+// export default function Button(props) {
+//     return (
+//         <button>{props.text}</button>
+//     )
+// }
