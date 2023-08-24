@@ -1,3 +1,5 @@
+import MenuItem from "./MenuItem"
+
 export default function MenuDropdown({ children }) {
     return (
         <div className="menu-dropdown">
