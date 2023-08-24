@@ -93,7 +93,7 @@ button.button-large {
     align-items: center;
     justify-content: center;
     border: .3rem solid white;
-    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 .avatar > img {
