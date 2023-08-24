@@ -53,11 +53,6 @@ export default function App() {
             <Avatar>BZ</Avatar>
             <Avatar /> */}
 
-            <Menu
-                buttonText="Sports"
-                items={["Tennis", "Pickleball", "Racquetball", "Squash"]}
-            />
-
             <Menu>
                 <MenuButton buttonText="Sports" />
                 <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
