@@ -2,6 +2,9 @@ import Button from "../components/Button"
 import ButtonChildren from "../components/Button-Children"
 import Avatar from "../components/Avatar"
 import Menu from "../components/Menu"
+import MenuButton from "../components/MenuButton"
+import MenuDropdown from "../components/MenuDropdown"
+
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 
@@ -54,6 +57,11 @@ export default function App() {
                 buttonText="Sports"
                 items={["Tennis", "Pickleball", "Racquetball", "Squash"]}
             />
+
+            <Menu>
+                <MenuButton buttonText="Sports" />
+                <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
+            </Menu>
         </main>
     )
 }
