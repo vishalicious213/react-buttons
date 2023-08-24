@@ -4,11 +4,14 @@ import Avatar from "../components/Avatar"
 import Menu from "../components/Menu"
 import MenuButton from "../components/MenuButton"
 import MenuDropdown from "../components/MenuDropdown"
+import MenuItem from "../components/MenuItem"
 
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 
 export default function App() {
+    const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]
+
     function handleLogin() {
         console.log("Logging in...")
     }
@@ -55,7 +58,9 @@ export default function App() {
 
             <Menu>
                 <MenuButton>Sports</MenuButton>
-                <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
+                <MenuDropdown>
+                    {sports.map(sport => <MenuItem key={sport}>{sport}</MenuItem>)}
+                </MenuDropdown>
             </Menu>
         </main>
     )
