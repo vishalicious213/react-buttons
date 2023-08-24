@@ -45,7 +45,7 @@ export default function App() {
                 <FcGoogle /> Log in with Google
             </ButtonChildren>
 
-            {/* <Avatar src="./images/bob.jpg" alt="Bob Ziroll" /> */}
+            <Avatar src="./images/bob.jpg" alt="Bob Ziroll" />
             {/* <br /> */}
             <Avatar>BZ</Avatar>
             {/* <br /> */}
