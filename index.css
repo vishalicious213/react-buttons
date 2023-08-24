@@ -120,3 +120,23 @@ button.button-large {
     transform: translateY(20px);
     color: whitesmoke;
 }
+
+.navy {
+    background-color: #1F2937;
+}
+
+.pink {
+    background-color: #DA6AEC;
+}
+
+.red {
+    background-color: #F43F5E;
+}
+
+.blue {
+    background-color: #2F74DC;
+}
+
+.green {
+    background-color: #22CD90;
+}
