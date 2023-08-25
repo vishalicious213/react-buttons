@@ -7,11 +7,17 @@ export default function Menu({ children }) {
 
     function toggle() {
         setOpen(prevOpen => !prevOpen)
+        console.log(open)
     }
 
     return (
         <div className="menu">
-            {children}
+            {React.Children.map(children, child => {
+                return React.cloneElement(child, {
+                    open,
+                    toggle
+                })
+            })}
             {/* <MenuButton
                 buttonText={buttonText}
                 onClick={toggle}

@@ -1,7 +1,7 @@
 import Button from "./Button"
 
-export default function MenuButton({ onClick, children }) {
+export default function MenuButton({ toggle, children }) {
     return (
-        <Button onClick={onClick}>{children}</Button>
+        <Button onClick={toggle}>{children}</Button>
     )
 }
