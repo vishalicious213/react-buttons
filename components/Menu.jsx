@@ -13,14 +13,9 @@ export default function Menu({ children }) {
     }
 
     return (
-        <MenuContext.Provider value={false}>
+        <MenuContext.Provider value={{open, toggle}}>
             <div className="menu">
-                {React.Children.map(children, child => {
-                    return React.cloneElement(child, {
-                        open,
-                        toggle
-                    })
-                })}
+                {children}
             </div>
         </MenuContext.Provider>
     )
