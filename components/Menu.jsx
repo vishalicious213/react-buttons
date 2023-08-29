@@ -1,9 +1,9 @@
 import React from "react"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
-import { useContext } from "react"
+import { createContext } from "react"
 
-const MenuContext = useContext
+const MenuContext = createContext()
 
 export default function Menu({ children }) {
     const [open, setOpen] = React.useState(true)
@@ -13,13 +13,17 @@ export default function Menu({ children }) {
     }
 
     return (
-        <div className="menu">
-            {React.Children.map(children, child => {
-                return React.cloneElement(child, {
-                    open,
-                    toggle
-                })
-            })}
-        </div>
+        <MenuContext.Provider value="false">
+            <div className="menu">
+                {React.Children.map(children, child => {
+                    return React.cloneElement(child, {
+                        open,
+                        toggle
+                    })
+                })}
+            </div>
+        </MenuContext.Provider>
     )
 }
+
+export { MenuContext }
