@@ -1,6 +1,9 @@
 import React from "react"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
+import { useContext } from "react"
+
+const MenuContext = useContext
 
 export default function Menu({ children }) {
     const [open, setOpen] = React.useState(true)
