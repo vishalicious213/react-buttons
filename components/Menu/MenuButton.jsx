@@ -1,4 +1,4 @@
-import Button from "./Button"
+import Button from "../Button"
 import { useContext } from "react"
 import { MenuContext } from "./Menu"
 
