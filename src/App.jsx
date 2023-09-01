@@ -5,6 +5,7 @@ import Menu from "../components/Menu"
 import MenuButton from "../components/MenuButton"
 import MenuDropdown from "../components/MenuDropdown"
 import MenuItem from "../components/MenuItem"
+import Star from "../components/Star"
 
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
@@ -55,6 +56,8 @@ export default function App() {
             {/* <Avatar src="./bob.jpg" alt="Bob Ziroll" />
             <Avatar>BZ</Avatar>
             <Avatar /> */}
+
+            <Star />
 
             <Menu>
                 <MenuButton>Sports</MenuButton>
