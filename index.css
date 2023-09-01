@@ -181,3 +181,19 @@ button.button-lg {
 .menu-item:not(:last-child) {
     border-bottom: 1px solid #6B7280;
 }
+
+/* STAR */
+
+
+.star {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    user-select: none;
+    color: white;
+}
+
+.star.filled {
+    color: orange;
+}
