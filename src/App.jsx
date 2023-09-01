@@ -1,10 +1,10 @@
 import Button from "../components/Button"
 import ButtonChildren from "../components/Button-Children"
 import Avatar from "../components/Avatar"
-import Menu from "../components/Menu/Menu"
-import MenuButton from "../components/Menu/MenuButton"
-import MenuDropdown from "../components/Menu/MenuDropdown"
-import MenuItem from "../components/Menu/MenuItem"
+import Menu from "../components/Menu/index"
+// import MenuButton from "../components/Menu/MenuButton"
+// import MenuDropdown from "../components/Menu/MenuDropdown"
+// import MenuItem from "../components/Menu/MenuItem"
 import Star from "../components/Star"
 
 import { FaMoneyBill } from "react-icons/fa"
@@ -60,10 +60,10 @@ export default function App() {
             <Star />
 
             <Menu>
-                <MenuButton>Sports</MenuButton>
-                <MenuDropdown>
-                    {sports.map(sport => <MenuItem key={sport}>{sport}</MenuItem>)}
-                </MenuDropdown>
+                <Menu.Button>Sports</Menu.Button>
+                <Menu.Dropdown>
+                    {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
+                </Menu.Dropdown>
             </Menu>
         </main>
     )
