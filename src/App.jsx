@@ -6,6 +6,7 @@ import Menu from "../components/Menu/index"
 // import MenuDropdown from "../components/Menu/MenuDropdown"
 // import MenuItem from "../components/Menu/MenuItem"
 import Star from "../components/Star"
+import Toggle from "../components/Toggle/Toggle"
 
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
@@ -57,14 +58,17 @@ export default function App() {
             <Avatar>BZ</Avatar>
             <Avatar /> */}
 
-            <Star />
+            <Toggle>
+                <Star />
+            </Toggle>
 
-            <Menu>
+
+            {/* <Menu>
                 <Menu.Button>Sports</Menu.Button>
                 <Menu.Dropdown>
                     {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
                 </Menu.Dropdown>
-            </Menu>
+            </Menu> */}
         </main>
     )
 }

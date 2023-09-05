@@ -7,7 +7,7 @@ export default function Star() {
     function toggle() {
         setStarred(prev => !prev)
     }
-    
+
     return (
         starred ? 
         <BsStarFill className="star filled" onClick={toggle} /> :
