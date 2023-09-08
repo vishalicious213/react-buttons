@@ -1,3 +1,5 @@
+// This component shares state and a state setter function through context
+
 import React from "react"
 import { useState, createContext } from "react"
 

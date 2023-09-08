@@ -59,7 +59,9 @@ export default function App() {
             <Avatar /> */}
 
             <Toggle>
-                <Star />
+                <Toggle.Button>
+                    <Star />
+                </Toggle.Button>
             </Toggle>
 
 
