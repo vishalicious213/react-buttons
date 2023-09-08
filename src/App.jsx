@@ -5,8 +5,9 @@ import Menu from "../components/Menu/index"
 // import MenuButton from "../components/Menu/MenuButton"
 // import MenuDropdown from "../components/Menu/MenuDropdown"
 // import MenuItem from "../components/Menu/MenuItem"
-import Star from "../components/Star"
+// import Star from "../components/Star"
 import Toggle from "../components/Toggle/index"
+import { BsStar, BsStarFill } from "react-icons/bs"
 
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
@@ -60,14 +61,16 @@ export default function App() {
 
             <Toggle>
                 <Toggle.Button>
-                    <Star />
+                    {/* <Star /> */}
+                    <Toggle.On>
+                        {/* <div>ToggleState is ON</div> */}
+                        <BsStarFill className="star filled" />
+                    </Toggle.On>
+                    <Toggle.Off>
+                        {/* <div>ToggleState is OFF</div> */}
+                        <BsStar className="star " />
+                    </Toggle.Off>
                 </Toggle.Button>
-                <Toggle.On>
-                    <div>ToggleState is ON</div>
-                </Toggle.On>
-                <Toggle.Off>
-                    <div>ToggleState is OFF</div>
-                </Toggle.Off>
             </Toggle>
 
 
