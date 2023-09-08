@@ -1,4 +1,4 @@
-// displays wrapped elements when Toggle state is "on"
+// displays wrapped elements when Toggle state is "off"
 
 import React from "react"
 import { useContext } from "react"

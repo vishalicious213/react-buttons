@@ -63,8 +63,11 @@ export default function App() {
                     <Star />
                 </Toggle.Button>
                 <Toggle.On>
-                    <div>THIS IS A TEST</div>
+                    <div>ToggleState is ON</div>
                 </Toggle.On>
+                <Toggle.Off>
+                    <div>ToggleState is OFF</div>
+                </Toggle.Off>
             </Toggle>
 
 
