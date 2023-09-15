@@ -73,7 +73,6 @@ export default function App() {
 
             <CompoundStar />
 
-            <Toggle>
                 <Menu>
                     <Toggle.Button>
                         <Menu.Button>Sports</Menu.Button>
@@ -84,7 +83,6 @@ export default function App() {
                         </Toggle.On>
                     </Toggle.Button>
                 </Menu>
-            </Toggle>
 
             {/* <Menu>
                 <Menu.Button>Sports</Menu.Button>
