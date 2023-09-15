@@ -8,6 +8,7 @@ import Menu from "../components/Menu/index"
 // import Star from "../components/Star"
 import Toggle from "../components/Toggle/index"
 import { BsStar, BsStarFill } from "react-icons/bs"
+import CompoundStar from "../components/StarCompound"
 
 import { FaMoneyBill } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
@@ -59,19 +60,18 @@ export default function App() {
             <Avatar>BZ</Avatar>
             <Avatar /> */}
 
-            <Toggle>
+            {/* <Toggle>
                 <Toggle.Button>
-                    {/* <Star /> */}
                     <Toggle.On>
-                        {/* <div>ToggleState is ON</div> */}
                         <BsStarFill className="star filled" />
                     </Toggle.On>
                     <Toggle.Off>
-                        {/* <div>ToggleState is OFF</div> */}
                         <BsStar className="star " />
                     </Toggle.Off>
                 </Toggle.Button>
-            </Toggle>
+            </Toggle> */}
+
+            <CompoundStar />
 
             <Toggle>
                 <Menu>
