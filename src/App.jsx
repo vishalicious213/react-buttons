@@ -73,8 +73,8 @@ export default function App() {
                 </Toggle.Button>
             </Toggle>
 
-            <Menu>
-                <Toggle>
+            <Toggle>
+                <Menu>
                     <Toggle.Button>
                         <Menu.Button>Sports</Menu.Button>
                         <Toggle.On>
@@ -83,8 +83,8 @@ export default function App() {
                             </Menu.Dropdown>
                         </Toggle.On>
                     </Toggle.Button>
-                </Toggle>
-            </Menu>
+                </Menu>
+            </Toggle>
 
             {/* <Menu>
                 <Menu.Button>Sports</Menu.Button>
