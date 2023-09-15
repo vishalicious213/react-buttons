@@ -74,14 +74,10 @@ export default function App() {
             <CompoundStar />
 
             <Menu>
-                <Toggle.Button>
-                    <Menu.Button>Sports</Menu.Button>
-                    <Toggle.On>
-                        <Menu.Dropdown>
-                            {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
-                        </Menu.Dropdown>
-                    </Toggle.On>
-                </Toggle.Button>
+                <Menu.Button>Sports</Menu.Button>
+                <Menu.Dropdown>
+                    {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
+                </Menu.Dropdown>
             </Menu>
 
             {/* <Menu>

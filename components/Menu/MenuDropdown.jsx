@@ -7,6 +7,12 @@
 //     return open ? (<div className="menu-dropdown">{children}</div>) : null
 // }
 
+import Toggle from "../Toggle"
+
 export default function MenuDropdown({ children }) {
-    return <div className="menu-dropdown">{children}</div>
+    return (
+        <Toggle.On>
+            <div className="menu-dropdown">{children}</div>
+        </Toggle.On>
+    )
 }
