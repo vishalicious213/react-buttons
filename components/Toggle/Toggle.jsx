@@ -9,7 +9,10 @@ export default function Toggle({ children, onToggle }) {
     const [on, setOn] = useState(false)
 
     useEffect(() => {
-        console.log("on", on)
+        console.log(typeof onToggle)
+        if (typeof onToggle === "function") {
+            onToggle()
+        }
     }, [on])
 
     function toggle() {

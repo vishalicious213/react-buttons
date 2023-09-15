@@ -4,7 +4,7 @@ import { BsStar, BsStarFill } from "react-icons/bs"
 
 export default function CompoundStar() {
     return (
-        <Toggle>
+        <Toggle onToggle={() => console.log("on")}>
             <Toggle.Button>
                 <Toggle.On>
                     <BsStarFill className="star filled" />
