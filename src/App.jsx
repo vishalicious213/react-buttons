@@ -74,16 +74,16 @@ export default function App() {
             </Toggle>
 
             <Menu>
-            <Toggle>
-                <Toggle.Button>
-                    <Menu.Button>Sports</Menu.Button>
-                    <Toggle.On>
-                        <Menu.Dropdown>
-                            {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
-                        </Menu.Dropdown>
-                    </Toggle.On>
-                </Toggle.Button>
-            </Toggle>
+                <Toggle>
+                    <Toggle.Button>
+                        <Menu.Button>Sports</Menu.Button>
+                        <Toggle.On>
+                            <Menu.Dropdown>
+                                {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
+                            </Menu.Dropdown>
+                        </Toggle.On>
+                    </Toggle.Button>
+                </Toggle>
             </Menu>
 
             {/* <Menu>
