@@ -2,9 +2,9 @@ import React from "react"
 import Toggle from "./Toggle"
 import { BsStar, BsStarFill } from "react-icons/bs"
 
-export default function CompoundStar() {
+export default function CompoundStar({ onChange }) {
     return (
-        <Toggle onToggle={() => console.log("on")}>
+        <Toggle onToggle={onChange}>
             <Toggle.Button>
                 <Toggle.On>
                     <BsStarFill className="star filled" />

@@ -21,7 +21,7 @@ export default function App() {
 
     return (
         <main>
-            <CompoundStar />
+            <CompoundStar onChange={() => console.log("on")} />
 
             <Menu>
                 <Menu.Button>Sports</Menu.Button>
