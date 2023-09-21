@@ -21,9 +21,9 @@ export default function App() {
 
     return (
         <main>
-            <CompoundStar onChange={() => console.log("on")} />
+            <CompoundStar onChange={() => console.log("CompoundStar: on")} />
 
-            <Menu onOpen={() => console.log("onOpen")}>
+            <Menu onOpen={() => console.log("Menu: onOpen")}>
                 <Menu.Button>Sports</Menu.Button>
                 <Menu.Dropdown>
                     {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}

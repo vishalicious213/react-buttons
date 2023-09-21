@@ -11,7 +11,11 @@ export default function Toggle({ children, onToggle }) {
 
     useEffect(() => {
         if (typeof onToggle === "function") {
-            onToggle()
+            if (firstRender.current) {
+                firstRender.current = false
+            } else {
+                onToggle()
+            }
         }
     }, [on])
 
