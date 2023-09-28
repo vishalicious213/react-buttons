@@ -6,10 +6,4 @@ export default function ToggleDisplay({ children }) {
     const { on } = useContext(ToggleContext)
 
     return children(on)
-
-    // return (
-    //     <div>
-    //         { children }
-    //     </div>
-    // )
 }
