@@ -5,11 +5,13 @@ import { ToggleContext } from "./Toggle"
 export default function ToggleDisplay({ children }) {
     const value = useContext(ToggleContext)
 
-    console.log(value.on)
+    console.log(value)
 
-    return (
-        <div>
-            { children }
-        </div>
-    )
+    return children(value)
+
+    // return (
+    //     <div>
+    //         { children }
+    //     </div>
+    // )
 }
