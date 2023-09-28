@@ -32,6 +32,16 @@ export default function App() {
 
             <Toggle>
                 <Toggle.Button>
+                    <Toggle.Display>
+                        {(value) => {
+                            return <div className={`box ${value.on ? `filled` : ""}`}></div>
+                        }}
+                    </Toggle.Display>
+                </Toggle.Button>
+            </Toggle>
+
+            {/* <Toggle>
+                <Toggle.Button>
                     <Toggle.On>
                         <div className="box filled"></div>
                     </Toggle.On>
@@ -39,7 +49,7 @@ export default function App() {
                         <div className="box"></div>
                     </Toggle.Off>
                 </Toggle.Button>
-            </Toggle>
+            </Toggle> */}
 
             {/* <Button text="Click here" />
 
