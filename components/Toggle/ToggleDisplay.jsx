@@ -3,11 +3,9 @@ import { useContext } from "react"
 import { ToggleContext } from "./Toggle"
 
 export default function ToggleDisplay({ children }) {
-    const value = useContext(ToggleContext)
+    const { on } = useContext(ToggleContext)
 
-    console.log(value)
-
-    return children(value)
+    return children(on)
 
     // return (
     //     <div>

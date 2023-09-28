@@ -33,8 +33,8 @@ export default function App() {
             <Toggle>
                 <Toggle.Button>
                     <Toggle.Display>
-                        {(value) => {
-                            return <div className={`box ${value.on ? `filled` : ""}`}></div>
+                        {(on) => {
+                            return <div className={`box ${on ? `filled` : ""}`}></div>
                         }}
                     </Toggle.Display>
                 </Toggle.Button>
