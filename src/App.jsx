@@ -7,7 +7,7 @@ import CompoundStar from "../components/StarCompound"
 // import MenuDropdown from "../components/Menu/MenuDropdown"
 // import MenuItem from "../components/Menu/MenuItem"
 // import Star from "../components/Star"
-// import Toggle from "../components/Toggle/index"
+import Toggle from "../components/Toggle/index"
 // import { BsStar, BsStarFill } from "react-icons/bs"
 // import { FaMoneyBill } from "react-icons/fa"
 // import { FcGoogle } from "react-icons/fc"
@@ -29,6 +29,17 @@ export default function App() {
                     {sports.map(sport => <Menu.Item key={sport}>{sport}</Menu.Item>)}
                 </Menu.Dropdown>
             </Menu>
+
+            <Toggle>
+                <Toggle.Button>
+                    <Toggle.On>
+                        <div className="box filled"></div>
+                    </Toggle.On>
+                    <Toggle.Off>
+                        <div className="box"></div>
+                    </Toggle.Off>
+                </Toggle.Button>
+            </Toggle>
 
             {/* <Button text="Click here" />
 
