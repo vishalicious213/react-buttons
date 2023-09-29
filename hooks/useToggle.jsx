@@ -7,4 +7,6 @@ export default function useToggle() {
     function toggle() {
         setOn(prevOn => !prevOn)
     }
+
+    return [on, toggle]
 }
