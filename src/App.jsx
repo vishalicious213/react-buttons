@@ -30,7 +30,7 @@ export default function App() {
                 </Menu.Dropdown>
             </Menu>
 
-            <Toggle>
+            <Toggle onToggle={() => {console.log("Toggled")}}>
                 <Toggle.Button>
                     <Toggle.Display>
                         {(on) => {
