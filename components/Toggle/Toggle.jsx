@@ -7,17 +7,17 @@ const ToggleContext = createContext()
 
 export default function Toggle({ children, onToggle }) {
     const [on, setOn] = useState(false)
-    const firstRender = useRef(true)
+    // const firstRender = useRef(true)
 
-    useEffect(() => {
-        if (typeof onToggle === "function") {
-            if (firstRender.current) {
-                firstRender.current = false
-            } else {
-                onToggle()
-            }
-        }
-    }, [on])
+    // useEffect(() => {
+    //     if (typeof onToggle === "function") {
+    //         if (firstRender.current) {
+    //             firstRender.current = false
+    //         } else {
+    //             onToggle()
+    //         }
+    //     }
+    // }, [on])
 
     function toggle() {
         setOn(prevOn => !prevOn)

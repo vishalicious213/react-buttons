@@ -1,3 +1,5 @@
+// custom hook that operates like useEffect but only runs on the first render, not every render
+
 import React from "react"
 
 export default function useEffectOnUpdate(effectFunction, deps) {
