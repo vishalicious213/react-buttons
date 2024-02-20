@@ -1,11 +1,15 @@
 import Button from "../Button"
-import Toggle from "../Toggle"
+// import Toggle from "../Toggle"
+import useToggle from "../../hooks/useToggle"
 
 export default function MenuButton({ children }) {
+    const [open, toggleOpen] = useToggle()
+
     return (
-        <Toggle.Button>
-            <Button>{children}</Button>
-        </Toggle.Button>
+        <Button></Button>
+        // <Toggle.Button>
+        //     <Button>{children}</Button>
+        // </Toggle.Button>
     )
 }
 
