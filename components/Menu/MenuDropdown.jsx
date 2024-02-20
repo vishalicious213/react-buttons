@@ -1,5 +1,5 @@
-// import { useContext } from "react"
-// import { MenuContext } from "./Menu"
+import { useContext } from "react"
+import { MenuContext } from "./Menu"
 
 // export default function MenuDropdown({ children }) {
 //     const { open } = useContext(MenuContext)
@@ -8,13 +8,20 @@
 // }
 
 // import Toggle from "../Toggle"
-import useToggle from "../../hooks/useToggle"
+// import useToggle from "../../hooks/useToggle"
 
 export default function MenuDropdown({ children }) {
-    const [open, toggleOpen] = useToggle()
+    // const [open, toggleOpen] = useToggle()
+    const { open } = useContext(MenuContext)
 
     return (
-        <div className="menu-dropdown">{children}</div>
+        <>
+            {
+                open 
+                    ? <div className="menu-dropdown">{children}</div>
+                    : null
+            }
+        </>
         // <Toggle.On>
         //     <div className="menu-dropdown">{children}</div>
         // </Toggle.On>
