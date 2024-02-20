@@ -7,10 +7,18 @@ export default function CompoundStar({ onChange }) {
     const [on, toggle] = useToggle()
     
     return (
-        <BsStar 
-            className={on ? "star filled" : "star"} 
-            onClick={toggle}
-        />
+        <>
+            {on 
+                ? <BsStarFill className="star filled" onClick={toggle} /> 
+                : <BsStar className="star" onClick={toggle} />
+            }
+        </>
+
+
+        // <BsStar 
+        //     className={on ? "star filled" : "star"} 
+        //     onClick={toggle}
+        // />
 
         // <Toggle onToggle={onChange}>
         //     <Toggle.Button>
