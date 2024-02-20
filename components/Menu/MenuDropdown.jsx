@@ -14,7 +14,7 @@ export default function MenuDropdown({ children }) {
     const [open, toggleOpen] = useToggle()
 
     return (
-        <div className="menu-dropdown"></div>
+        <div className="menu-dropdown">{children}</div>
         // <Toggle.On>
         //     <div className="menu-dropdown">{children}</div>
         // </Toggle.On>

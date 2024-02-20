@@ -6,7 +6,7 @@ export default function Menu({ children }) {
     const [open, toggleOpen] = useToggle()
 
     return (
-        <div className="menu"></div>
+        <div className="menu">{children}</div>
         // <Toggle onToggle={onOpen}>
         //     <div className="menu">
         //         {children}

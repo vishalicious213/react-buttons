@@ -6,7 +6,7 @@ export default function MenuButton({ children }) {
     const [open, toggleOpen] = useToggle()
 
     return (
-        <Button></Button>
+        <Button>{children}</Button>
         // <Toggle.Button>
         //     <Button>{children}</Button>
         // </Toggle.Button>
